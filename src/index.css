@@ -1,0 +1,384 @@
+:root {
+  --dark-pink: #d04479;
+  --pink: #ec5096;
+  --white: #fff;
+}
+
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--pink);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Courier New",
+    monospace;
+}
+
+.spinner {
+  background-color: var(--dark-pink);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: yellow;
+}
+
+.rotateSpinner {
+  margin-left: 5%;
+  transform: scale(10);
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.top-banner-parent {
+  background-color: var(--dark-pink);
+  align-items: center;
+}
+
+.flex-top-banner > a {
+  color: #fff;
+}
+
+.flex-top-banner > a:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.leftArrow:hover {
+  color: yellow;
+}
+
+.navTitle {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #efefef;
+}
+
+.right-side-banner > * {
+  margin-inline: 7px;
+}
+
+.flex-top-banner {
+  width: 98%;
+  margin-block: 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 30px;
+  background-color: var(--dark-pink);
+}
+
+.parent-banner-div {
+  background: #ec5096;
+  padding: 20px;
+  color: #efefef;
+}
+
+.banner-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 5%;
+}
+
+.banner-details > h1 {
+  margin: 0;
+  margin-bottom: 5%;
+}
+
+.banner-details > p {
+  margin: 0;
+  font-size: 17px;
+}
+
+.banner-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.banner-description-para {
+  width: 95%;
+  margin-inline: auto;
+  text-align: left;
+  font-size: 15px;
+}
+
+.banner-description-para > p {
+  margin-block: 0;
+  padding-bottom: 10px;
+}
+
+.web {
+  color: rgb(35, 150, 226);
+}
+
+.web:hover {
+  color: blue;
+}
+
+.finance-heading-container {
+  width: 100%;
+  background-color: var(--pink);
+  color: white;
+}
+
+.finance-heading {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.evenFinancial {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.evenFinancial *,
+.oddFinancial * {
+  margin: 0;
+}
+
+.color-financials:nth-child(2n-1) {
+  background: var(--pink);
+}
+
+.color-financials:nth-child(2n) {
+  background: var(--dark-pink);
+}
+
+.oddFinancial {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.financialDes {
+  width: 95%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.top-body {
+  width: 100%;
+  background-color: var(--dark-pink);
+  color: white;
+}
+
+.top-heading {
+  display: flex;
+  margin-top: 9px;
+  font-size: 20px;
+  opacity: 80%;
+}
+
+.mic {
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+}
+
+.mic:hover {
+  color: yellow;
+}
+
+.settings {
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+}
+
+.settings:hover {
+  color: yellow;
+  border-radius: 100px;
+}
+
+.cover-img {
+  width: 100%;
+  height: 235px;
+}
+
+.holder {
+  width: 57%;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.icons > * {
+  margin: 0 5px;
+  margin-top: 10px;
+}
+
+.container-Inc {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.company-child {
+  display: flex;
+  width: 50%;
+  background: var(--pink);
+}
+
+.company-child:nth-child(4n + 2),
+.company-child:nth-child(4n + 3) {
+  background: var(--dark-pink);
+}
+
+.full-width {
+  width: 100%;
+  background-color: var(--dark-pink);
+  color: white;
+  text-align: center;
+}
+
+.list-heading {
+  margin-left: 2%;
+  padding-block: 2%;
+  font-size: 18px;
+  margin-block: 0;
+}
+
+.oddBox,
+.evenBox {
+  width: 98%;
+  height: 170px;
+  color: white;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 2%;
+}
+
+.oddBox h3,
+.evenBox h3 {
+  margin: 0;
+}
+
+.arrow {
+  border: 2px solid var(--white);
+  color: var(--white);
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.arrow:hover {
+  border: 2px solid yellow;
+}
+
+.canvas {
+  height: 300px;
+  background-image: url(./assets/mauricio-chavez-qpGn6DnlE10-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.bg-home-image {
+  background-color: #ec5096bb;
+  height: 300px;
+}
+
+.company-details {
+  font-size: 10px;
+}
+
+.name {
+  font-size: 20px;
+  color: #efefef;
+}
+
+.price {
+  font-size: 20px;
+  color: #efefef;
+}
+
+.whatFor {
+  text-transform: uppercase;
+  background-color: #d04479;
+  padding: 10px;
+  color: #efefef;
+}
+
+.combine-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 40%;
+}
+
+.navLink {
+  text-decoration: none;
+}
+
+.companyName {
+  text-align: right;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 80%;
+  margin-inline: auto;
+  color: #efefef;
+}
+
+@media (min-width: 650px) {
+  .companyName {
+    text-align: right;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 80%;
+    margin-inline: auto;
+    color: #efefef;
+  }
+}
